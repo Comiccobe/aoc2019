@@ -1,1 +1,1 @@
-time clang main.c -o build/main && ./build/main
+time clang main.c -o build/main && time ./build/main
