@@ -1,20 +1,5 @@
 #include <stdio.h>
-
-int get_number_length(int num) {
-  int count = 1;
-  int temp = num;
-  while (temp /= 10) count++;
-  return count;
-};
-
-void split_number_into_digits(int num, int length, char* result) {
-  int position = length;
-  int temp = num;
-  while (position--) {
-    result[position] = temp % 10;
-    temp /= 10;
-  }
-};
+#include "../common/helpers.h"
 
 int main() {
   int from = 206938;
